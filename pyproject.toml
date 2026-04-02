@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "p2p-assistant"
+version = "0.1.0"
+description = "Desktop assistant for Binance/OKX/Bybit P2P workflows"
+requires-python = ">=3.11"
+dependencies = [
+  "playwright>=1.50.0",
+  "customtkinter>=5.2.2",
+  "openpyxl>=3.1.5",
+  "pandas>=2.2.0"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
